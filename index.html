@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>JIRA Management Tool</title>
+  </head>
+
+  <body>
+    <div class="toolBox">
+      <div class="priorityBox">
+        <div style="background-color: #56f156">SOLVED</div>
+        <div style="background-color: #f97f51">CRITICAL</div>
+        <div style="background-color: #f1c40f">MEDIUM</div>
+        <div style="background-color: #d6a2e8">LOW</div>
+      </div>
+      <div class="actionBox">
+        <div class="add" id="add">
+          <span><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <div class="remove" id="remove">
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="bodyArea">
+      <div class="ticketSpace" id="ticketSpace"></div>
+      <div class="modalSpace">
+        <div class="modalBox" id="modal">
+          <div class="text"><textarea class="input" id="input"></textarea></div>
+          <div class="setPriority">
+            <h2 style="color: white">Ticket Priority</h2>
+            <div style="background-color: #d6a2e8">LOW</div>
+            <div style="background-color: #f1c40f">MEDIUM</div>
+            <div style="background-color: #f97f51">CRITICAL</div>
+            <div style="background-color: #56f156" class="active">SOLVED</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
